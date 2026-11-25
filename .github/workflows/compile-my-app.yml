@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: '22.23.5'
       - name: checkout
-        run: actions/checkout@v6
-        
+        uses: actions/checkout@v6
+
       - run: npm ci
       - run: npm run build
       - run: npm test
